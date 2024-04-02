@@ -93,7 +93,7 @@ async def dry_run(prompt: str):
         {"role": "user", "content": prompt}
     ],
     temperature=0.7,
-    max_tokens=1000
+    max_tokens=1001
     )
 
     print(completion.choices[0].message)
