@@ -10,4 +10,4 @@ bind = "0.0.0.0:8000"
 
 worker_class = "uvicorn.workers.UvicornWorker"
 workers = min((multiprocessing.cpu_count() * 2) + 1, 4)  # Max workers = 4, as currently we load the index in memory
-timeout = 120
+timeout = 240
