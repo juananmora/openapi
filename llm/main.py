@@ -87,7 +87,7 @@ async def dry_run(prompt: str):
     print(f"Good! this is the prompt, {prompt}")  
 
     completion = client.chat.completions.create(
-    model="TheBloke/Mistral-7B-Instruct-v0.2-GGUF/mistral-7b-instruct-v0.2.Q5_K_M.gguf",
+    model="lmstudio-community/Meta-Llama-3-8B-Instruct-GGUF",
     messages=[
         {"role": "system", "content": "Always answer in rhymes."},
         {"role": "user", "content": prompt}
